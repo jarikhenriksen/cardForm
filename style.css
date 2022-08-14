@@ -1,5 +1,74 @@
-#background-left {
+html, body {
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#left-image {
     background-image: url('./images/bg-main-desktop.png');
-    height: 100%;
-    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    width: 30%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#inputSection {
+    background-color: aliceblue;
+    width: 70%;
+    height: 100vh;
+}
+
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 12rem;
+    padding: 5rem;
+}
+
+#cardDateAndCVC {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+input {
+    width: 99%;
+    height: 2rem;
+    font-size: larger;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: blueviolet;
+}
+
+#cardDate input {
+    display: inline;
+    width: 20%;
+}
+
+#cardDate label {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+.info {
+    margin-top: 2rem;
+    
 }

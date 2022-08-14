@@ -10,7 +10,36 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="background-left"></div>
+        <div id="left-image"></div>
+        <section id="inputSection">
+
+
+            <form id="inputForm">
+                <div id="cardName" class="info">
+                    <label>CARDHOLDER NAME</label>
+                    <input type="text" name="cardName" required>
+                </div>
+                <div id="cardNumber" class="info">
+                    <label>CARD NUMBER</label>
+                    <input type="number" name="cardNumber" required>
+                </div>
+
+                <div id="cardDateAndCVC">
+                    <div id="cardDate" class="info">
+                        <label>EXP. DATE (MM/YY)</label>
+                        <input type="number" name="cardDateMonth" required min="01" max="12">
+                        <input type="number" name="cardDateYear" required min="15" max="999">
+                    </div>
+                    <div id="cardCVC" class="info">
+                        <label>CVC</label>
+                        <input type="number" name="cardCVC" required>
+                    </div>
+                </div>
+
+                <button type="submit">Confirm</button>
+
+            </form>
+        </section>
 
         <script src="index.js" async defer></script>
     </body>
