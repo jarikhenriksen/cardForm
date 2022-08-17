@@ -1,5 +1,7 @@
 html, body {
     margin: 0;
+    min-width: 100%;
+    position: absolute;
 }
 
 input::-webkit-outer-spin-button,
@@ -14,18 +16,65 @@ input::-webkit-inner-spin-button {
     background-size: cover;
     min-height:100%;
     width: 30%;
+    position: absolute;
+
 }
 
+#x { 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    width: 100%;
+}
 
 body {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    background-color: aliceblue;
 }
 
+#cardImages {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+#cardFrontImage {
+    height: 17rem;
+    width: 30rem;
+    margin: 10vh 0 0 10vw;
+}
+
+#cardBackImage {
+    height: 17rem;
+    width: 30rem;
+    margin: 0 0 0 15vw;
+}
+
+#cardFrontImageInfo {
+    height: fit-content;
+}
+#a {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    color: aliceblue;
+}
+
+#updatedNumber {
+    color: aliceblue;
+    display: block;
+    width: 100%;
+}
+
+
 #inputSection {
-    background-color: aliceblue;
-    width: 70%;
+    width: 100%;
     height: 100vh;
 }
 
@@ -34,10 +83,26 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    width: fit-content;
-    margin: auto;
+    width: 50%;
+    font-size: 1rem;
+    margin: 4rem;
+    padding: 2rem;
     margin-top: 12rem;
-    padding: 5rem;
+}
+
+#inputForm button {
+    height: fit-content;
+    padding: 0.7rem;
+    width: auto;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-top: 2rem;
+    background-color: rgb(85, 30, 136);
+    color: aliceblue;
+}
+
+#inputForm div {
+    width: 100%;
 }
 
 #cardDateAndCVC {
@@ -47,9 +112,8 @@ body {
 }
 
 input {
-    width: 99%;
-    height: 2rem;
-    font-size: larger;
+    width: 98%;
+    height: 2.5rem;
     border-radius: 5px;
     border-width: 1px;
     border-color: blueviolet;
@@ -57,11 +121,15 @@ input {
 
 #cardDate input {
     display: inline;
-    width: 20%;
+    width: 40%;
 }
 
 #cardDate label {
     display: block;
+}
+
+#cardCVC{
+    margin-left: 1rem;
 }
 
 label {
@@ -69,6 +137,6 @@ label {
 }
 
 .info {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     
 }

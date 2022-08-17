@@ -11,36 +11,55 @@
     </head>
     <body>
         <div id="left-image"></div>
-        <section id="inputSection">
 
-
-            <form id="inputForm">
-                <div id="cardName" class="info">
-                    <label>CARDHOLDER NAME</label>
-                    <input type="text" name="cardName" required>
-                </div>
-                <div id="cardNumber" class="info">
-                    <label>CARD NUMBER</label>
-                    <input type="number" name="cardNumber" required>
-                </div>
-
-                <div id="cardDateAndCVC">
-                    <div id="cardDate" class="info">
-                        <label>EXP. DATE (MM/YY)</label>
-                        <input type="number" name="cardDateMonth" required min="01" max="12">
-                        <input type="number" name="cardDateYear" required min="15" max="999">
+            <div id="x">
+                <div id="cardImages">
+            
+                    <div id="cardFrontImageInfo">
+                        <img id="cardFrontImage" src="./images/bg-card-front.png">
+                        <div id="a">
+                            <p class="updatedCardInfo" id="updatedNumber">number</p>
+                            <p class="updatedCardInfo" id="updatedName">name</p>
+                            <p class="updatedCardInfo" id="updatedExpiry">exp</p>
+                        </div>
                     </div>
-                    <div id="cardCVC" class="info">
-                        <label>CVC</label>
-                        <input type="number" name="cardCVC" required>
-                    </div>
+        
+                    <img id="cardBackImage" src="./images/bg-card-back.png">
+                    <p class="updatedCardInfo" id="updatedCVC">cvc</p>
                 </div>
-
-                <button type="submit">Confirm</button>
-
-            </form>
-        </section>
-
+        
+               
+                <section id="inputSection">
+        
+        
+                    <form id="inputForm">
+                        <div id="cardName" class="info">
+                            <label>CARDHOLDER NAME</label>
+                            <input type="text" name="cardName" required>
+                        </div>
+                        <div id="cardNumber" class="info">
+                            <label>CARD NUMBER</label>
+                            <input type="number" name="cardNumber" required>
+                        </div>
+        
+                        <div id="cardDateAndCVC">
+                            <div id="cardDate" class="info">
+                                <label>EXP. DATE (MM/YY)</label>
+                                <input type="number" name="cardDateMonth" required min="01" max="12">
+                                <input type="number" name="cardDateYear" required min="15" max="999">
+                            </div>
+                            <div id="cardCVC" class="info">
+                                <label>CVC</label>
+                                <input type="number" name="cardCVC" required min="000" max="999">
+                            </div>
+                        </div>
+        
+                        <button type="submit">Confirm</button>
+        
+                    </form>
+                </section>
+            </div>
+        
         <script src="index.js" async defer></script>
     </body>
 </html> 
