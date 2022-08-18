@@ -17,7 +17,6 @@ input::-webkit-inner-spin-button {
     min-height:100%;
     width: 30%;
     position: absolute;
-
 }
 
 #x { 
@@ -39,39 +38,57 @@ body {
     flex-direction: column;
     height: 100%;
     width: 80%;
+    margin-top: 6%;
 }
 
 #cardFrontImage {
+    background-image: url('/images/bg-card-front.png');
+    background-repeat: no-repeat;
     height: 17rem;
-    width: 30rem;
+    width: 28rem;
     margin: 10vh 0 0 10vw;
 }
 
 #cardBackImage {
+    background-repeat: no-repeat;
+    background-image: url('./images/bg-card-back.png');
     height: 17rem;
-    width: 30rem;
+    width: 28rem;
     margin: 0 0 0 15vw;
 }
 
-#cardFrontImageInfo {
+#cardFront {
     height: fit-content;
 }
 #a {
     z-index: 1;
-    width: 100%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     color: aliceblue;
 }
+#updatedName {
+    display: inline;
+    width: 50%;
+}
+
+#updatedExpiry {
+    display: inline;
+    width: 50%;
+}
 
 #updatedNumber {
-    color: aliceblue;
     display: block;
     width: 100%;
 }
 
+#updatedCVC {
+    margin-top: 25%;
+    margin-left: 75%;
+}
 
 #inputSection {
     width: 100%;
