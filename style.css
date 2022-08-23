@@ -72,28 +72,31 @@ body {
 
 #updatedName {  
     width: 50%;
-    margin: 0 0 0 15%;
+    margin: 0 0 0 5%;
     height: min-content;
 }
 
 #updatedNumber {
-    margin: 25% 0 0 15%;
+    margin: 27% 0 0 5%;
     height: min-content;
+    width: fit-content;
 }
 
 #updatedCVC {
-    margin-top: 23%;
+    margin: 22% 0 0 80%;
 }
 
 #updatedDateTotal {
     display: flex;
     flex-direction: row;
     height: min-content;
+    margin-left: 20%;
 }
 
 .updatedCardInfo {
-    font-size: x-large;
+    font-size: xx-large;
     width: fit-content;
+    margin: 0;
 }
 
 #inputSection {
