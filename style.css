@@ -58,9 +58,9 @@ body {
     margin: 0 0 0 15vw;
 }
 
-#cardFront {
+/* #cardFront {
     height: fit-content;
-}
+} */
 #a {
     z-index: 1;
     width: 100%;
@@ -190,6 +190,7 @@ label {
     #inputSection {
         width: 100%;
         height: 50vh;
+        margin-top: 10%;
     }
 
     #inputForm {
@@ -198,8 +199,9 @@ label {
         flex-wrap: wrap;
         align-content: center;
         width:auto;
+        height: fit-content;
         font-size: 1rem;
-        margin: auto
+        margin: auto;  
     }
 
     #cardImages {
@@ -209,22 +211,36 @@ label {
         width: 100%;
     }
     
+
     #cardFrontImage {
         background-image: url('/images/bg-card-front.png');
-        background-repeat: no-repeat;
-        height: 17rem;
-        width: 28rem;
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: fit-content;
         margin: auto;
-        margin-bottom: -10%;
+        /* margin-bottom: -10%; 
         margin-right: 40%;
-        margin-left: 5%;
+        margin-left: 5%*/
+    } 
+
+    #a {
+        z-index: 1;
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        color: aliceblue;
     }
     
     #cardBackImage {
         background-repeat: no-repeat;
         background-image: url('./images/bg-card-back.png');
-        height: 17rem;
-        width: 28rem;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
         margin: auto;
         z-index: -1;
     }
