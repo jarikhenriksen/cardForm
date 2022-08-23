@@ -166,7 +166,8 @@ label {
 }
 
 @media only screen and (max-width:1000px) {
-    body {
+    body, html {
+        margin: 0;
        display: flex;
        flex-direction: column; 
        flex-wrap: wrap;
