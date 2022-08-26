@@ -218,7 +218,7 @@ label {
 
     #cardFrontImage {
         position: relative;
-        background-image: url('/images/bg-card-front.png');
+        background-image: url('./images/bg-card-front.png');
         background-repeat:no-repeat;
         background-size: cover;
         border-radius: 10px;
