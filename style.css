@@ -46,17 +46,17 @@ body {
     background-image: url('./images/bg-card-front.png');
     background-repeat: no-repeat;
     color: aliceblue;
-    height: 17rem;
-    width: 28rem;
+    height: 15.3rem;
+    width: 27.7rem;
     margin: 0 0 0 10vw;
 }
 
 #cardBackImage {
     background-repeat: no-repeat;
     background-image: url('./images/bg-card-back.png');
-    height: 17rem;
-    width: 28rem;
-    margin: 0 0 0 15vw;
+    height: 15.3rem;
+    width: 27.7rem;
+    margin: 1vw 0 0 15vw;
 }
 
 #a {
@@ -135,6 +135,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    position: relative;
 }
 
 input {
@@ -155,8 +156,10 @@ input {
 }
 
 #cardCVC{
-    margin-left: 1rem;
-}
+    position: absolute;
+    bottom: 0px;
+    width: 48%;
+    }
 
 label {
     display: block;
