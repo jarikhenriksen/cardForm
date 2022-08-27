@@ -123,9 +123,10 @@ body {
     flex-wrap: wrap;
     align-content: center;
     position: relative;
-    width: 50%;
+    width: 60%;
+    height: max-content;
     font-size: 1rem;
-    top: 200px;
+    top: 250px;
     margin: auto auto;
     padding: 2rem;
 }
