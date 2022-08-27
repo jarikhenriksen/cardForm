@@ -35,11 +35,12 @@ body {
 }
 
 #cardLogo {
-    height: min-content;
+    height: 5vw;
+    max-height: 45px;
     width: auto;
     position: relative;
-    top: 10px;
-    left: 15px;
+    top: 5%;
+    left:3%;
 }
 
 #cardImages {
