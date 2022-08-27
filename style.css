@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     min-width: 100%;
     position: absolute;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -48,6 +48,7 @@ body {
     flex-direction: column;
     height: auto;
     margin: auto 0;
+    margin-left: 7%;
     width: 80%;
 }
 
@@ -59,6 +60,7 @@ body {
     width: 27.7rem;
     margin: 0 0 0 10vw;
     border-radius: 10px;
+    box-shadow: 10px 10px 100px 10px rgba(128, 128, 128, 0.452);
 }
 
 #cardBackImage {
@@ -66,8 +68,9 @@ body {
     background-image: url('./images/bg-card-back.png');
     height: 15.3rem;
     width: 27.7rem;
-    margin: 1vw 0 0 15vw;
+    margin: 3vw 0 0 15vw;
     border-radius: 10px;
+    box-shadow: 10px 10px 100px 10px rgba(128, 128, 128, 0.452);
 }
 
 #a {
@@ -257,8 +260,8 @@ label {
         background-image: url('./images/bg-card-back.png');
         background-size: contain;
         border-radius: 10px;
-        height: 35vw;
-        width: 60%;
+        height: 32vw;
+        width: 58.4%;
         margin: 5% 0 0 30%;
     }
 
