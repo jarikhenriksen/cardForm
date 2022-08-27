@@ -5,27 +5,27 @@ let monthExpiryDateInput = document.getElementById('cardDateMonth');
 let yearExpiryDateInput = document.getElementById('cardDateYear')
 let cvcInput = document.getElementById('cardCVC');
 
-nameInput.onchange = (event) => {
+nameInput.onkeyup = (event) => {
     newName = event.target.value
     document.getElementById('updatedName').innerText = newName
 };
 
-numberInput.onchange = (event) => {
+numberInput.onkeyup = (event) => {
     newNumber = event.target.value
     document.getElementById('updatedNumber').innerText = newNumber
 };
 
-monthExpiryDateInput.onchange = (event) => {
+monthExpiryDateInput.onkeyup = (event) => {
     newMonthExpiryDate = event.target.value
     document.getElementById('updatedExpiryMonth').innerText = newMonthExpiryDate
 };
 
-yearExpiryDateInput.onchange = (event) => {
+yearExpiryDateInput.onkeyup = (event) => {
     newYearExpiryDate = event.target.value
     document.getElementById('updatedExpiryYear').innerText = newYearExpiryDate
 };
 
-cvcInput.onchange = (event) => {
+cvcInput.onkeyup = (event) => {
     newCVC = event.target.value
     document.getElementById('updatedCVC').innerText = newCVC
 }

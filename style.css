@@ -34,11 +34,19 @@ body {
     background-color: aliceblue;
 }
 
+#cardLogo {
+    height: min-content;
+    width: auto;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
 #cardImages {
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-top: 5%;
+    margin: auto 0;
     width: 80%;
 }
 
@@ -49,6 +57,7 @@ body {
     height: 15.3rem;
     width: 27.7rem;
     margin: 0 0 0 10vw;
+    border-radius: 10px;
 }
 
 #cardBackImage {
@@ -57,6 +66,7 @@ body {
     height: 15.3rem;
     width: 27.7rem;
     margin: 1vw 0 0 15vw;
+    border-radius: 10px;
 }
 
 #a {
@@ -72,14 +82,16 @@ body {
 
 #updatedName {  
     width: 50%;
-    margin: 0 0 0 5%;
+    margin: 0 0 3% 5%;
     height: min-content;
 }
 
 #updatedNumber {
-    margin: 27% 0 0 5%;
-    height: min-content;
-    width: fit-content;
+    margin: 25% 0 0 5%;
+    position: relative;
+    bottom: 10px;
+    height: 40px;
+    width: 100%;
 }
 
 #updatedCVC {
@@ -109,11 +121,12 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    position: relative;
     width: 50%;
     font-size: 1rem;
-    margin: 4rem;
+    top: 200px;
+    margin: auto auto;
     padding: 2rem;
-    margin-top: 3rem;
 }
 
 #inputForm button {
@@ -195,7 +208,7 @@ label {
 
     #inputSection {
         width: 100%;
-        height: 50vh;
+        height: 0;
         margin: auto;
     }
 
@@ -209,6 +222,7 @@ label {
         font-size: 1rem;
         margin: auto;
         margin-top: 0;  
+        top: 0px;
     }
 
     #cardImages {
@@ -229,8 +243,8 @@ label {
         flex-direction: column;
         align-items: center;
         color: aliceblue;
-        height: 25vw;
-        width: 45%;
+        height: 35vw;
+        width: 60%;
         margin: 20% 0 0 10%;
         z-index: 1;
     } 
@@ -241,8 +255,8 @@ label {
         background-image: url('./images/bg-card-back.png');
         background-size: contain;
         border-radius: 10px;
-        height: 27vw;
-        width: 45%;
+        height: 35vw;
+        width: 60%;
         margin: 5% 0 0 30%;
     }
 
